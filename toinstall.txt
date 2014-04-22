@@ -1,0 +1,1 @@
+apt-get install tcl8.6-dev php5-common php5-cli libapr1-dev openjdk-7-jre openjdk-7-jdk ruby php5 build-essential libglib2.0-dev libboost1.54-dev libboost-system1.54-dev libboost-regex1.54-dev

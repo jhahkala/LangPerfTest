@@ -1,0 +1,13 @@
+*~
+*.class
+__*
+*.o
+*_run
+regexdna-input5000000.txt
+*.aux
+*.log
+*.project
+*.rnd
+*.rnd.out
+/doc
+.out

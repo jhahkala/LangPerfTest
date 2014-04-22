@@ -1,0 +1,20 @@
+for the tests to perform without caches. They should be run as root
+
+couldn't use fastest c++ implementation as it used re2 library that is only available from Google code mercurial repo and it didn't compile.
+
+for PHP the there wasn't any thread-ring test.
+
+taskset for limiting cpus
+
+
+Run the run.sh on the harkka dir to get the 50MB test file for the regexp tests.
+Then run the tests by running the run.sh in {test}/{language} directories. 
+
+run the genfiles.sh in harkka/io dir to generate the 1000 1m files and 1 1G file.
+
+currently implemented tests:
+- binary
+- regex
+- spectra
+- thread (except PHP, doesn't exist)
+- io

@@ -1,0 +1,22 @@
+#!/usr/bin/ruby
+def handlefile(filename)
+    print (Time.now.to_f * 1000.0).to_i
+    print ";"
+	buffer = File.binread(filename)
+    print (Time.now.to_f * 1000.0).to_i
+    print ";"
+	File.binwrite(filename+".out", buffer)
+    puts (Time.now.to_f * 1000.0).to_i
+end
+
+if ARGV.length != 1
+	puts "usage ruby iotest.yarv <directory>"
+	exit 1
+end
+
+$i = 0
+while $i <= 999 do
+	handlefile(ARGV[0]+ "/small%03d.rnd" % $i)
+	$i +=1
+end
+handlefile(ARGV[0]+ "/big.rnd")
